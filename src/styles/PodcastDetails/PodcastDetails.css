@@ -1,0 +1,40 @@
+.episodes-list {
+  width: 850px;
+}
+
+.episodes-counter {
+  font-size: 1.4rem;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #fff;
+  color: blue;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.even-row {
+  background-color: none;
+}
+
+.odd-row {
+  background-color: #eaeaea;
+}
+
+table {
+  width: 850px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+table th {
+  text-align: left;
+}
+
+td {
+  padding: 7px;
+}
+
+.cell-black {
+  color: black;
+}

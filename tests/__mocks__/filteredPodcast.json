@@ -1,0 +1,170 @@
+{
+    "podcast": {
+        "artist": "The Joe Budden Network",
+        "title": "The Joe Budden Podcast",
+        "podcastId": 1535809341,
+        "image": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/100x100bb.jpg"
+    },
+    "episodes": [
+        {
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_709.mp3?dest-id=2422538",
+            "decription": "",
+            "podcastId": 1535809341,
+            "podcastTitle": "The Joe Budden Podcast",
+            "releaseDate": "2024-03-20T07:00:00Z",
+            "trackTimeMillis": 11448000
+        },
+        {
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_708.mp3?dest-id=2422538",
+            "decription": "",
+            "podcastId": 1535809341,
+            "podcastTitle": "The Joe Budden Podcast",
+            "releaseDate": "2024-03-16T07:00:00Z",
+            "trackTimeMillis": 12206000
+        },
+        {
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_707.mp3?dest-id=2422538",
+            "decription": "",
+            "podcastId": 1535809341,
+            "podcastTitle": "The Joe Budden Podcast",
+            "releaseDate": "2024-03-13T07:00:00Z",
+            "trackTimeMillis": 11629000
+        },
+        {
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_706.mp3?dest-id=2422538",
+            "decription": "",
+            "podcastId": 1535809341,
+            "podcastTitle": "The Joe Budden Podcast",
+            "releaseDate": "2024-03-09T08:00:00Z",
+            "trackTimeMillis": 14147000
+        },
+        {
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_705.mp3?dest-id=2422538",
+            "decription": "",
+            "podcastId": 1535809341,
+            "podcastTitle": "The Joe Budden Podcast",
+            "releaseDate": "2024-03-06T08:00:00Z",
+            "trackTimeMillis": 11551000
+        },
+        {
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_704.mp3?dest-id=2422538",
+            "decription": "",
+            "podcastId": 1535809341,
+            "podcastTitle": "The Joe Budden Podcast",
+            "releaseDate": "2024-03-02T08:00:00Z",
+            "trackTimeMillis": 11487000
+        },
+        {
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_703.mp3?dest-id=2422538",
+            "decription": "",
+            "podcastId": 1535809341,
+            "podcastTitle": "The Joe Budden Podcast",
+            "releaseDate": "2024-02-28T08:00:00Z",
+            "trackTimeMillis": 9339000
+        },
+        {
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_702.mp3?dest-id=2422538",
+            "decription": "",
+            "podcastId": 1535809341,
+            "podcastTitle": "The Joe Budden Podcast",
+            "releaseDate": "2024-02-24T08:00:00Z",
+            "trackTimeMillis": 11158000
+        },
+        {
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/V1_Joe_Budden_Podcast_701.mp3?dest-id=2422538",
+            "decription": "",
+            "podcastId": 1535809341,
+            "podcastTitle": "The Joe Budden Podcast",
+            "releaseDate": "2024-02-21T08:00:00Z",
+            "trackTimeMillis": 13353000
+        },
+        {
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_700.mp3?dest-id=2422538",
+            "decription": "",
+            "podcastId": 1535809341,
+            "podcastTitle": "The Joe Budden Podcast",
+            "releaseDate": "2024-02-17T08:00:00Z",
+            "trackTimeMillis": 9565000
+        },
+        {
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_699.mp3?dest-id=2422538",
+            "decription": "",
+            "podcastId": 1535809341,
+            "podcastTitle": "The Joe Budden Podcast",
+            "releaseDate": "2024-02-14T08:00:00Z",
+            "trackTimeMillis": 11230000
+        },
+        {
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_698.mp3?dest-id=2422538",
+            "decription": "",
+            "podcastId": 1535809341,
+            "podcastTitle": "The Joe Budden Podcast",
+            "releaseDate": "2024-02-10T08:00:00Z",
+            "trackTimeMillis": 12698000
+        },
+        {
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_697.mp3?dest-id=2422538",
+            "decription": "",
+            "podcastId": 1535809341,
+            "podcastTitle": "The Joe Budden Podcast",
+            "releaseDate": "2024-02-07T08:00:00Z",
+            "trackTimeMillis": 11434000
+        },
+        {
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcat_696.mp3?dest-id=2422538",
+            "decription": "",
+            "podcastId": 1535809341,
+            "podcastTitle": "The Joe Budden Podcast",
+            "releaseDate": "2024-02-03T08:00:00Z",
+            "trackTimeMillis": 10058000
+        },
+        {
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_695.mp3?dest-id=2422538",
+            "decription": "",
+            "podcastId": 1535809341,
+            "podcastTitle": "The Joe Budden Podcast",
+            "releaseDate": "2024-01-31T08:00:00Z",
+            "trackTimeMillis": 11923000
+        },
+        {
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_694.mp3?dest-id=2422538",
+            "decription": "",
+            "podcastId": 1535809341,
+            "podcastTitle": "The Joe Budden Podcast",
+            "releaseDate": "2024-01-27T08:00:00Z",
+            "trackTimeMillis": 11402000
+        },
+        {
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_693.mp3?dest-id=2422538",
+            "decription": "",
+            "podcastId": 1535809341,
+            "podcastTitle": "The Joe Budden Podcast",
+            "releaseDate": "2024-01-24T08:00:00Z",
+            "trackTimeMillis": 12114000
+        },
+        {
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_692.mp3?dest-id=2422538",
+            "decription": "",
+            "podcastId": 1535809341,
+            "podcastTitle": "The Joe Budden Podcast",
+            "releaseDate": "2024-01-20T08:00:00Z",
+            "trackTimeMillis": 12535000
+        },
+        {
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_691.mp3?dest-id=2422538",
+            "decription": "",
+            "podcastId": 1535809341,
+            "podcastTitle": "The Joe Budden Podcast",
+            "releaseDate": "2024-01-17T08:00:00Z",
+            "trackTimeMillis": 12328000
+        },
+        {
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_690.mp3?dest-id=2422538",
+            "decription": "",
+            "podcastId": 1535809341,
+            "podcastTitle": "The Joe Budden Podcast",
+            "releaseDate": "2024-01-13T08:00:00Z",
+            "trackTimeMillis": 14077000
+        }
+    ]
+}

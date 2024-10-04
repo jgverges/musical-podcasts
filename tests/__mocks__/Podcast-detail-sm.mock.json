@@ -1,0 +1,117 @@
+{
+    "resultCount": 21,
+    "results": [
+        {
+            "wrapperType": "track",
+            "kind": "podcast",
+            "artistId": 1535844019,
+            "collectionId": 1535809341,
+            "trackId": 1535809341,
+            "artistName": "The Joe Budden Network",
+            "collectionName": "The Joe Budden Podcast",
+            "trackName": "The Joe Budden Podcast",
+            "collectionCensoredName": "The Joe Budden Podcast",
+            "trackCensoredName": "The Joe Budden Podcast",
+            "artistViewUrl": "https://podcasts.apple.com/us/artist/the-joe-budden-network/1535844019?uo=4",
+            "collectionViewUrl": "https://podcasts.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?uo=4",
+            "feedUrl": "https://jbpod.libsyn.com/applepodcast",
+            "trackViewUrl": "https://podcasts.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?uo=4",
+            "artworkUrl30": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/30x30bb.jpg",
+            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/60x60bb.jpg",
+            "artworkUrl100": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/100x100bb.jpg",
+            "collectionPrice": 0.00,
+            "trackPrice": 0.00,
+            "collectionHdPrice": 0,
+            "releaseDate": "2024-03-20T07:00:00Z",
+            "collectionExplicitness": "notExplicit",
+            "trackExplicitness": "explicit",
+            "trackCount": 469,
+            "trackTimeMillis": 11448,
+            "country": "USA",
+            "currency": "USD",
+            "primaryGenreName": "Music",
+            "contentAdvisoryRating": "Explicit",
+            "artworkUrl600": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts113/v4/f2/21/fa/f221fabd-017f-5125-633b-f1fe4f39802a/mza_182995249085044287.jpg/600x600bb.jpg",
+            "genreIds": [
+                "1310",
+                "26"
+            ],
+            "genres": [
+                "Music",
+                "Podcasts"
+            ]
+        },
+        {
+            "country": "USA",
+            "artworkUrl160": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/55/9b/9a/559b9a10-2fd9-c642-5386-aa409fbb0432/mza_10915422395533997390.jpeg/160x160bb.jpg",
+            "episodeFileExtension": "mp3",
+            "episodeContentType": "audio",
+            "artworkUrl600": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/55/9b/9a/559b9a10-2fd9-c642-5386-aa409fbb0432/mza_10915422395533997390.jpeg/600x600bb.jpg",
+            "previewUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_709.mp3?dest-id=2422538",
+            "closedCaptioning": "none",
+            "collectionId": 1535809341,
+            "collectionName": "The Joe Budden Podcast",
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_709.mp3?dest-id=2422538",
+            "genres": [
+                {
+                    "name": "Music",
+                    "id": "1310"
+                }
+            ],
+            "episodeGuid": "de6142fe-7d33-4975-b4d8-30d31541f49f",
+            "trackId": 1000649827664,
+            "trackName": "Episode 709 | \"Ish Type Beat\"",
+            "artistIds": [
+                1535844019
+            ],
+            "shortDescription": "The JBP kicks things off with recent news of Bruno Mars owing MGM $50 million in gambling debt (21:33) before moving to new podcasts emerging including LeBron James & JJ Redick, as well as Lamar Odom & Caitlin Jenner (42:49). The room then...",
+            "feedUrl": "https://jbpod.libsyn.com/applepodcast",
+            "description": "The JBP kicks things off with recent news of Bruno Mars owing MGM $50 million in gambling debt (21:33) before moving to new podcasts emerging including LeBron James & JJ Redick, as well as Lamar Odom & Caitlin Jenner (42:49). The room then speculates the rumors that 4Batz is an AI artist (57:16), new albums from Beyoncé & Future are on the way (1:02:29), and J. Cole drops another vlog teasing new music (1:09:49). Also, DJ Akademiks offers Meek Mill a podcast deal (1:22:15), *TRIGGER WARNING* the four-part Nickelodeon documentary ‘Quiet on Set’ has been released (1:34:30), Amanda Seales says she doesn’t feel welcome in black spaces (2:06:46), and much more!\n Become a Patron of The Joe Budden Podcast for additional bonus episodes and visual content for all things JBP! Join our Patreon here: www.patreon.com/joebudden\n  \n Sleeper Picks: \n Joe | Ambré - “Lost Without U”\n Ice | Flo Milli - “Got The Juice”\n Parks | Maxo Kream - “No Then You A Hoe”\n Ish | MaKenzie (feat. TA Thomas) - “Maybe”",
+            "releaseDate": "2024-03-20T07:00:00Z",
+            "contentAdvisoryRating": "Explicit",
+            "trackViewUrl": "https://podcasts.apple.com/us/podcast/episode-709-ish-type-beat/id1535809341?i=1000649827664&uo=4",
+            "collectionViewUrl": "https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4",
+            "trackTimeMillis": 11448000,
+            "artistViewUrl": "https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4",
+            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts211/v4/55/9b/9a/559b9a10-2fd9-c642-5386-aa409fbb0432/mza_10915422395533997390.jpeg/60x60bb.jpg",
+            "kind": "podcast-episode",
+            "wrapperType": "podcastEpisode"
+        },
+        {
+            "country": "USA",
+            "artworkUrl160": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts112/v4/cb/13/b7/cb13b7c5-c2cf-0231-bacc-f7b3e1eeb5d2/mza_15246561917246910972.jpeg/160x160bb.jpg",
+            "episodeFileExtension": "mp3",
+            "episodeContentType": "audio",
+            "artworkUrl600": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts112/v4/cb/13/b7/cb13b7c5-c2cf-0231-bacc-f7b3e1eeb5d2/mza_15246561917246910972.jpeg/600x600bb.jpg",
+            "previewUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_708.mp3?dest-id=2422538",
+            "closedCaptioning": "none",
+            "collectionId": 1535809341,
+            "collectionName": "The Joe Budden Podcast",
+            "episodeUrl": "https://verifi.podscribe.com/rss/p/traffic.libsyn.com/secure/jbpod/Joe_Budden_Podcast_708.mp3?dest-id=2422538",
+            "genres": [
+                {
+                    "name": "Music",
+                    "id": "1310"
+                }
+            ],
+            "episodeGuid": "d88503e4-5f2b-4c66-aeb4-95c431f62cf8",
+            "trackId": 1000649398912,
+            "trackName": "Episode 708 | \"Your Feet is Tea\"",
+            "artistIds": [
+                1535844019
+            ],
+            "shortDescription": "The JBP starts this episode with a weekend full of new music including ‘Enough’ from Cardi B (21:41), songs from Sexyy Redd and PARTYNEXTDOOR (36:12), plus music from Gunna, Don Tolliver, and Flo Milli (46:08). Karrueche is selling feet pics on...",
+            "feedUrl": "https://jbpod.libsyn.com/applepodcast",
+            "description": "The JBP starts this episode with a weekend full of new music including ‘Enough’ from Cardi B (21:41), songs from Sexyy Redd and PARTYNEXTDOOR (36:12), plus music from Gunna, Don Tolliver, and Flo Milli (46:08). Karrueche is selling feet pics on OnlyFans (58:20), Kanye West has fired YesJulz and fined her $7.7 million (1:13:21), Joe reacts to LeBron James driving around playing Silk’s ‘Lose Control’ (1:21:36), and Bobbi Althoff was booted from Drake’s SXSW party by security (1:26:16). Also, the room shares their thoughts on Kanye saying he invented every style of music in the last 20 years (1:46:16), Emanny shares some news with his cohosts (2:25:20) which leads to a conversation about manscaping, and much more! \n Become a Patron of The Joe Budden Podcast for additional bonus episodes and visual content for all things JBP! Join our Patreon here: www.patreon.com/joebudden\n Sleeper Picks: \n Joe | Marie Dahlstrøm - “Safe Place”\n Ice | Flo Milli (feat. Gunna) - “Edible”\n Parks | Rapsody - “Stand Tall”\n Ish | Shantel May (feat. Lola Brooke) - “Love It Here”",
+            "releaseDate": "2024-03-16T07:00:00Z",
+            "contentAdvisoryRating": "Explicit",
+            "trackViewUrl": "https://podcasts.apple.com/us/podcast/episode-708-your-feet-is-tea/id1535809341?i=1000649398912&uo=4",
+            "collectionViewUrl": "https://itunes.apple.com/us/podcast/the-joe-budden-podcast/id1535809341?mt=2&uo=4",
+            "trackTimeMillis": 12206000,
+            "artistViewUrl": "https://itunes.apple.com/us/artist/the-joe-budden-network/1535844019?mt=2&uo=4",
+            "artworkUrl60": "https://is1-ssl.mzstatic.com/image/thumb/Podcasts112/v4/cb/13/b7/cb13b7c5-c2cf-0231-bacc-f7b3e1eeb5d2/mza_15246561917246910972.jpeg/60x60bb.jpg",
+            "kind": "podcast-episode",
+            "wrapperType": "podcastEpisode"
+        }
+    ]
+}
