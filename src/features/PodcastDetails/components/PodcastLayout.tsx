@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { Link, Outlet, useParams, useLocation } from "react-router-dom";
-import { PodcastFiltered } from "../../PodcastList/models/PodcastFiltered";
 import "../../../styles/PodcastDetails/PodcastLayout.css";
+import { Podcast } from "../../../domain";
 
 export default function PodcastLayout() {
   const { podcastId } = useParams();
   const location = useLocation();
-  const [podcast, setPodcast] = useState<PodcastFiltered>();
+  const [podcast, setPodcast] = useState<Podcast>();
 
   useEffect(() => {
     const data = location.state?.data;

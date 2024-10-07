@@ -1,11 +1,13 @@
 import React from "react";
-import { useLoading } from "./LoadingContext";
+// import { useLoading } from "./LoadingContext.OLD";
 import { Link } from "react-router-dom";
 import LoadingIndicator from "./LoadingIndicator";
 import "../../styles/Header.css";
+import { useStorage } from "../..";
 
 function Header() {
-  const { loading } = useLoading();
+  const isLoading = useStorage((state) => state.isLoading);
+  // const { loading: initialLoading } = useLoading(); // TODO remove
   return (
     <header className="header-container">
       <h1 className="header-title">
@@ -13,7 +15,7 @@ function Header() {
           Podcaster
         </Link>
       </h1>
-      {loading && <LoadingIndicator />}
+      {isLoading && <LoadingIndicator />}
     </header>
   );
 }

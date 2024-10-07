@@ -1,8 +1,8 @@
 import { PodcastListResponse } from "../models/PodcastListResponse";
-import { type PodcastFiltered } from "../models/PodcastFiltered";
 import { filterPodcastData } from "./filterPodcastData";
 import { PODCAST_LIST_URL } from "./podcastListApiUrls";
 import { useQuery } from "@tanstack/react-query";
+import { Podcast } from "../../../domain";
 
 const getPodcasts = async (): Promise<PodcastListResponse> => {
   const res = await fetch(PODCAST_LIST_URL);
@@ -17,10 +17,8 @@ function usePodcastList() {
     queryKey: ["podcats"],
     queryFn: () => getPodcasts(),
   });
-  const filteredPodcasts: PodcastFiltered[] = data
-    ? filterPodcastData(data)
-    : [];
-  return { filteredPodcasts, error, isLoading };
+  const podcasts: Podcast[] = data ? filterPodcastData(data) : [];
+  return { podcasts, error, isLoading };
 }
 
 export default usePodcastList;

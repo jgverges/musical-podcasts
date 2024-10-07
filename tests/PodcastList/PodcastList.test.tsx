@@ -1,12 +1,12 @@
 import React from "react";
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
 import PodcastList from "../../src/features/PodcastList/components/PodcastList";
-import { LoadingProvider } from "../../src/features/common/LoadingContext";
+// import { LoadingProvider } from "../../src/features/common/LoadingContext.OLD";
 import usePodcastsList from "../../src/features/PodcastList/services/usePodcastsList";
-import { PodcastFiltered } from "../../src/features/PodcastList/models/PodcastFiltered";
 import { BrowserRouter } from "react-router-dom";
+import { Podcast } from "../../src/domain";
 
-const mockPodcasts: PodcastFiltered[] = [
+const mockPodcasts: Podcast[] = [
   {
     title: "Podcast 1",
     artist: "Artist 1",
@@ -36,9 +36,9 @@ describe("PodcastList Component", () => {
     });
     render(
       <BrowserRouter>
-        <LoadingProvider>
-          <PodcastList />
-        </LoadingProvider>
+        {/* <LoadingProvider> */}
+        <PodcastList />
+        {/* </LoadingProvider> */}
       </BrowserRouter>
     );
   });

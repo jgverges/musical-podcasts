@@ -1,19 +1,19 @@
 import React, { useEffect } from "react";
-import { useLoading } from "./LoadingContext";
+import { useStorage } from "../..";
 
 interface AudioPlayerProps {
   src: string;
 }
 
 function AudioPlayer({ src }: AudioPlayerProps) {
-  const { setLoading } = useLoading();
+  const { updateLoading } = useStorage();
 
   useEffect(() => {
-    setLoading(true);
+    updateLoading(true);
   }, []);
 
   const handleLoadedData = () => {
-    setLoading(false);
+    updateLoading(false);
   };
   const handleError = (e: React.SyntheticEvent<HTMLAudioElement, Event>) => {
     console.log(e.currentTarget.error?.code);
@@ -27,6 +27,7 @@ function AudioPlayer({ src }: AudioPlayerProps) {
         onLoadedData={handleLoadedData}
       >
         Your browser does not support the audio element.
+        <track kind="metadata" src="" />
       </audio>
     </figure>
   );

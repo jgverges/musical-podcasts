@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
 import PodcastListIem from "./PodcastListItem";
-import { PodcastFiltered } from "../models/PodcastFiltered";
 import "../../../styles/PodcastList/PodcastList.css";
-import { useLoading } from "../../common/LoadingContext";
 import usePodcastsList from "../services/usePodcastsList";
+import { type Podcast } from "../../../domain";
+import { useStorage } from "../../..";
 
 function PostcastList() {
-  const { filteredPodcasts: podcasts, error, isLoading } = usePodcastsList();
+  const { podcasts, error, isLoading } = usePodcastsList();
   const [searchTerm, setSearchTerm] = useState<string>("");
+  const { updateLoading } = useStorage();
 
   // Global Loading
-  const { setLoading } = useLoading();
   useEffect(() => {
-    isLoading ? setLoading(true) : setLoading(false);
+    updateLoading(isLoading);
   }, [isLoading]);
 
   if (error) console.log(error);
@@ -23,7 +23,7 @@ function PostcastList() {
 
   const filteredPodcasts =
     podcasts && podcasts.length > 0
-      ? podcasts.filter((podcast: PodcastFiltered) => {
+      ? podcasts.filter((podcast: Podcast) => {
           const podcastTitle = podcast.title.toLowerCase();
           const authorName = podcast.artist.toLowerCase();
           const searchTermLower = searchTerm.toLowerCase();

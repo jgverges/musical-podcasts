@@ -1,3 +1,4 @@
+import { PodcastDetailOrEpisode } from "../models/PodcastDetailsResponse";
 import {
   ALLORIGIN_URL,
   PODCAST_DETAIL_BASE_URL,
@@ -6,7 +7,7 @@ import {
 export const getPodcastDetail = async (
   podcastId: string,
   podcastCount: number = 2
-) => {
+): Promise<PodcastDetailOrEpisode[]> => {
   const PROXY_URL =
     ALLORIGIN_URL +
     encodeURIComponent(
@@ -18,6 +19,8 @@ export const getPodcastDetail = async (
   if (!res.ok) throw new Error("Error fetching podcast details");
 
   const data = await res.json();
-  const { results } = await JSON.parse(data.contents);
+  const { results }: { results: PodcastDetailOrEpisode[] } = await JSON.parse(
+    data.contents
+  );
   return results;
 };

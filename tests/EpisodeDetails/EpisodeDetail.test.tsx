@@ -2,7 +2,7 @@ import React from "react";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter, Routes, Route } from "react-router-dom";
 import EpisodeDetails from "../../src/features/EpisodeDetails/components/EpisodeDetail";
-import { LoadingProvider } from "../../src/features/common/LoadingContext";
+// import { LoadingProvider } from "../../src/features/common/LoadingContext.OLD";
 
 const mockData = {
   episodeUrl: "episode-url",
@@ -23,11 +23,11 @@ describe("EpisodeDetails component", () => {
   beforeEach(() => {
     render(
       <MemoryRouter initialEntries={["/episode/123"]}>
-        <LoadingProvider>
-          <Routes>
-            <Route path="/episode/:episodeId" element={<EpisodeDetails />} />
-          </Routes>
-        </LoadingProvider>
+        {/* <LoadingProvider> */}
+        <Routes>
+          <Route path="/episode/:episodeId" element={<EpisodeDetails />} />
+        </Routes>
+        {/* </LoadingProvider> */}
       </MemoryRouter>
     );
   });

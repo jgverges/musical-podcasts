@@ -7,7 +7,8 @@
     "debug": "node --inspect-brk=9229 app.js",
     "dev": "webpack server --mode development",
     "build": "webpack --mode production",
-    "test": "jest"
+    "test": "jest",
+    "clean": "rimraf dist && rimraf build"
   },
   "keywords": [],
   "author": "jgverges",
@@ -20,7 +21,8 @@
     "express": "^4.19.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.22.3"
+    "react-router-dom": "^6.22.3",
+    "zustand": "^5.0.0-rc.2"
   },
   "overrides": {
     "express": "$express"
@@ -46,6 +48,7 @@
     "jest-fetch-mock": "^3.0.3",
     "mini-css-extract-plugin": "^2.8.1",
     "react-test-renderer": "^18.2.0",
+    "rimraf": "^6.0.1",
     "style-loader": "^3.3.4",
     "terser-webpack-plugin": "^5.3.10",
     "ts-jest": "^29.1.2",

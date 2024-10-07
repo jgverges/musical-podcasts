@@ -4,7 +4,7 @@ import PodcastDetails from "../../src/features/PodcastDetails/components/Podcast
 import usePodcastDetails from "../../src/features/PodcastDetails/services/usePodcastDetails";
 import { BrowserRouter } from "react-router-dom";
 import mock from "../__mocks__/Podcast-detail-sm.mock.json";
-import { LoadingProvider } from "../../src/features/common/LoadingContext";
+// import { LoadingProvider } from "../../src/features/common/LoadingContext.OLD";
 import {
   extractTitleFromTrack,
   millisecondsToHoursMinutes,
@@ -28,9 +28,9 @@ describe("PodcastDetails Component", () => {
     });
     render(
       <BrowserRouter>
-        <LoadingProvider>
-          <PodcastDetails />
-        </LoadingProvider>
+        {/* <LoadingProvider> */}
+        <PodcastDetails />
+        {/* </LoadingProvider> */}
       </BrowserRouter>
     );
   });

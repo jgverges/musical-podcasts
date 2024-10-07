@@ -1,10 +1,8 @@
-import { PodcastFiltered } from "../models/PodcastFiltered";
+import { Podcast } from "../../../domain";
 import { PodcastListResponse } from "../models/PodcastListResponse";
 
-export function filterPodcastData(
-  data: PodcastListResponse
-): PodcastFiltered[] {
-  const podcasts: PodcastFiltered[] = [];
+export function filterPodcastData(data: PodcastListResponse): Podcast[] {
+  const podcasts: Podcast[] = [];
 
   if (data?.feed?.entry && Array.isArray(data.feed.entry)) {
     data.feed.entry.forEach((entry) => {
@@ -15,14 +13,14 @@ export function filterPodcastData(
       const imageList = entry["im:image"] || [];
 
       if (title && podcastId && artist && summary && imageList) {
-        const PodcastFiltered: PodcastFiltered = {
+        const podcastFiltered: Podcast = {
           title,
           podcastId,
           artist,
           imageList,
           summary,
         };
-        podcasts.push(PodcastFiltered);
+        podcasts.push(podcastFiltered);
       }
     });
   }
