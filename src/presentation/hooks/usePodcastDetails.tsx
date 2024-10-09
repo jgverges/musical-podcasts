@@ -1,9 +1,11 @@
 import { useEffect } from "react";
-import { PodcastDetailOrEpisode } from "../models/PodcastDetailsResponse";
 import { useQueries } from "@tanstack/react-query";
-import { getPodcastDetail } from "./getPodcastDetail";
+import { Episode } from "../../domain";
+import { useAppStore } from "../../application/stores/useAppStore";
 
 export function usePodcastDetails(podcastId: string | undefined) {
+  const podcastService = useAppStore((state) => state.podcastService);
+
   const [initialQuery, fullQuery] = useQueries({
     queries: [
       {
@@ -11,9 +13,9 @@ export function usePodcastDetails(podcastId: string | undefined) {
         queryFn: () => {
           if (!podcastId) {
             console.error("podcastId is not defined");
-            return; // Manejar el caso donde podcastId no está disponible.
+            return;
           }
-          return getPodcastDetail(podcastId, 2);
+          return podcastService.getPodcastDetail(podcastId, 2);
         },
         enabled: !!podcastId,
       },
@@ -22,9 +24,9 @@ export function usePodcastDetails(podcastId: string | undefined) {
         queryFn: () => {
           if (!podcastId) {
             console.error("podcastId is not defined");
-            return; // Manejar el caso donde podcastId no está disponible.
+            return;
           }
-          return getPodcastDetail(podcastId, 10);
+          return podcastService.getPodcastDetail(podcastId, 10);
         },
         enabled: !!podcastId,
       },
@@ -37,8 +39,7 @@ export function usePodcastDetails(podcastId: string | undefined) {
     }
   }, [podcastId]);
 
-  const data: PodcastDetailOrEpisode[] =
-    fullQuery.data || initialQuery.data || [];
+  const data: Episode[] = fullQuery.data || initialQuery.data || [];
   const isLoading = initialQuery.isLoading || fullQuery.isLoading;
   const error = fullQuery.error || initialQuery.error;
 

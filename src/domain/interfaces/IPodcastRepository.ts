@@ -1,7 +1,7 @@
+import { Episode } from "../entities/Episode";
 import { Podcast } from "../entities/Podcast";
-import { PodcastDetailOrEpisode } from "../PodcastDetailsResponse";
 
 export interface IPodcastRepository {
   getPodcasts(): Promise<Podcast[]>;
-  getPodcastDetail(id: string): Promise<PodcastDetailOrEpisode>;
+  getPodcastDetail(id: string, podcastCount?: number): Promise<Episode[]>;
 }

@@ -1,30 +1,26 @@
 import React, { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 import {
-  extractTitleFromTrack,
   isoDateToDayMonthYear,
   millisecondsToHoursMinutes,
-} from "../../common/utils/FormattingHelpers";
-import "../../../styles/PodcastDetails/PodcastDetails.css";
-import usePodcastDetails from "../services/usePodcastDetails";
-import {
-  Episode,
-  PodcastDetailOrEpisode,
-} from "../models/PodcastDetailsResponse";
-import { useStorage } from "../../..";
+} from "../common/utils/FormattingHelpers";
+import "../styles/PodcastDetails/PodcastDetails.css";
+import usePodcastDetails from "../hooks/usePodcastDetails";
+import { useStorage } from "../..";
 
 function PodcastDetails() {
   const { podcastId } = useParams<{ podcastId: string }>();
   const {
-    data,
+    data: episodes,
     error,
     isLoading: isLoadingDetails,
   } = usePodcastDetails(podcastId);
+
   const { updateLoading } = useStorage();
 
   // Global Loading: is special because we prefecth 2 values before the fetch complete with at least 3 values
   useEffect(() => {
-    updateLoading(isLoadingDetails || (data && data.length <= 2));
+    updateLoading(isLoadingDetails || (episodes && episodes.length <= 2));
   }, [isLoadingDetails]);
 
   if (error) {
@@ -32,13 +28,9 @@ function PodcastDetails() {
     return;
   }
 
-  const episodes = data.filter(
-    (item: PodcastDetailOrEpisode): item is Episode => "episodeUrl" in item
-  );
-
   episodes.forEach((detail) => {
-    if (!detail.trackName || !detail.trackTimeMillis || !detail.releaseDate)
-      console.log(`Missing information  in episode: ${detail?.collectionName}`);
+    if (!detail.title || !detail.duration || !detail.releaseDate)
+      console.log(`Missing information  in episode`);
   });
 
   const resultsLength = episodes.length;
@@ -46,7 +38,7 @@ function PodcastDetails() {
   return (
     <section className="episodes-list">
       <div className="episodes-counter">
-        Episodes: {data && data.length > 0 ? resultsLength : ""}
+        Episodes: {episodes && episodes.length > 0 ? resultsLength : ""}
       </div>
       {resultsLength > 0 && (
         <table>
@@ -58,7 +50,7 @@ function PodcastDetails() {
             </tr>
           </thead>
           <tbody>
-            {episodes.map((episode: Episode, index) => (
+            {episodes.map((episode, index) => (
               <tr
                 key={episode.episodeUrl}
                 className={index % 2 === 0 ? "even-row" : "odd-row"}
@@ -69,7 +61,7 @@ function PodcastDetails() {
                     state={{ data: episode }}
                     className="no-underline"
                   >
-                    {extractTitleFromTrack(episode.trackName)}
+                    {episode.title}
                   </Link>
                 </td>
                 <td>
@@ -87,8 +79,8 @@ function PodcastDetails() {
                     state={{ data: episode }}
                     className="no-underline cell-black"
                   >
-                    {episode.trackTimeMillis &&
-                      millisecondsToHoursMinutes(episode.trackTimeMillis)}
+                    {!!episode.duration &&
+                      millisecondsToHoursMinutes(episode.duration)}
                   </Link>
                 </td>
               </tr>

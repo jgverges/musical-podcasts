@@ -2,7 +2,7 @@ import React from "react";
 // import { useLoading } from "./LoadingContext.OLD";
 import { Link } from "react-router-dom";
 import LoadingIndicator from "./LoadingIndicator";
-import "../../styles/Header.css";
+import "../styles/Header.css";
 import { useStorage } from "../..";
 
 function Header() {

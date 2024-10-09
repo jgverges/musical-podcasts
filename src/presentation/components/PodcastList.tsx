@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import PodcastListIem from "./PodcastListItem";
-import "../../../styles/PodcastList/PodcastList.css";
-import usePodcastsList from "../services/usePodcastsList";
-import { type Podcast } from "../../../domain";
-import { useStorage } from "../../..";
+import "../styles/PodcastList/PodcastList.css";
+import { type Podcast } from "../../domain";
+import { useStorage } from "../..";
+import usePodcastsList from "../hooks/usePodcastsList";
 
 function PostcastList() {
   const { podcasts, error, isLoading } = usePodcastsList();

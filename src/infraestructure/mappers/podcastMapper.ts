@@ -1,7 +1,30 @@
-import { Podcast } from "../../../domain";
-import { PodcastListResponse } from "../models/PodcastListResponse";
+import { Episode, Podcast } from "../../domain";
+import {
+  EpisodeAPI,
+  PodcastDetailOrEpisode,
+} from "../api/types/PodcastDetailsResponse";
+import { PodcastListResponse } from "../api/types/PodcastListResponse";
 
-export function filterPodcastData(data: PodcastListResponse): Podcast[] {
+export const transformToEpisode = (
+  results: PodcastDetailOrEpisode[]
+): Episode[] => {
+  const episodesAPI = results.filter(
+    (item): item is EpisodeAPI => "episodeUrl" in item
+  );
+
+  return episodesAPI.map((episodeAPI) => ({
+    id: String(episodeAPI.trackId),
+    title: episodeAPI.trackName,
+    description: episodeAPI.description,
+    releaseDate: episodeAPI.releaseDate,
+    duration: episodeAPI.trackTimeMillis,
+    episodeUrl: episodeAPI.episodeUrl,
+  }));
+};
+
+export function transformApiResponseToPodcasts(
+  data: PodcastListResponse
+): Podcast[] {
   const podcasts: Podcast[] = [];
 
   if (data?.feed?.entry && Array.isArray(data.feed.entry)) {

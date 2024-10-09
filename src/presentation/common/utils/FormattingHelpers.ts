@@ -13,9 +13,3 @@ export function millisecondsToHoursMinutes(milliseconds: number): string {
 
   return `${formattedHours}:${formattedMinutes}`;
 }
-
-export function extractTitleFromTrack(track: string) {
-  // When appears a  symbol '|' or '/' we returns the title. Ex:
-  // "trackName": "Episode 709 | \"Ish Type Beat\"",
-  return track.split(/[|\/]/)[1] || track;
-}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { Link, Outlet, useParams, useLocation } from "react-router-dom";
-import "../../../styles/PodcastDetails/PodcastLayout.css";
-import { Podcast } from "../../../domain";
+import "../styles/PodcastDetails/PodcastLayout.css";
+import { Podcast } from "../../domain";
 
 export default function PodcastLayout() {
   const { podcastId } = useParams();

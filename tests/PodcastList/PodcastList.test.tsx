@@ -1,10 +1,10 @@
 import React from "react";
 import { render, screen, fireEvent, waitFor } from "@testing-library/react";
-import PodcastList from "../../src/features/PodcastList/components/PodcastList";
+import PodcastList from "../../src/presentation/components/PodcastList";
 // import { LoadingProvider } from "../../src/features/common/LoadingContext.OLD";
-import usePodcastsList from "../../src/features/PodcastList/services/usePodcastsList";
 import { BrowserRouter } from "react-router-dom";
 import { Podcast } from "../../src/domain";
+import usePodcastsList from "../../src/presentation/hooks/usePodcastsList";
 
 const mockPodcasts: Podcast[] = [
   {

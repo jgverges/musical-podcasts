@@ -1,18 +1,16 @@
 import React, { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
-import NotFoundPage from "./features/common/NotFoundPage";
-import PodcastLayout from "./features/PodcastDetails/components/PodcastLayout";
-import "./styles/main.css";
-import Header from "./features/common/Header";
+import NotFoundPage from "./presentation/common/NotFoundPage";
+import PodcastLayout from "./presentation/components/PodcastLayout";
+import "./presentation/styles/main.css";
+import Header from "./presentation/common/Header";
 
-const PodcastList = lazy(
-  () => import("../src/features/PodcastList/components/PodcastList")
-);
+const PodcastList = lazy(() => import("./presentation/components/PodcastList"));
 const PodcastDetails = lazy(
-  () => import("../src/features/PodcastDetails/components/PodcastDetails")
+  () => import("./presentation/components/PodcastDetails")
 );
 const EpisodeDetails = lazy(
-  () => import("./features/EpisodeDetails/components/EpisodeDetail")
+  () => import("./presentation/components/EpisodeDetail")
 );
 
 function App() {

@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
 import { MemoryRouter, Routes, Route } from "react-router-dom";
-import EpisodeDetails from "../../src/features/EpisodeDetails/components/EpisodeDetail";
+import EpisodeDetails from "../../src/presentation/components/EpisodeDetail";
 // import { LoadingProvider } from "../../src/features/common/LoadingContext.OLD";
 
 const mockData = {

@@ -33,7 +33,7 @@ export type PodcastDetail = {
   genres?: string[];
 };
 
-export type Episode = {
+export type EpisodeAPI = {
   country: string;
   artworkUrl160?: string;
   episodeFileExtension?: string;
@@ -67,4 +67,4 @@ export type PodcastDetailResponse = {
   resultCount: number;
   results: PodcastDetailOrEpisode[];
 };
-export type PodcastDetailOrEpisode = PodcastDetail | Episode;
+export type PodcastDetailOrEpisode = PodcastDetail | EpisodeAPI;
