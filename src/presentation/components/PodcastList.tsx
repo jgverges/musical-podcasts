@@ -2,15 +2,14 @@ import React, { useEffect, useState } from "react";
 import PodcastListIem from "./PodcastListItem";
 import "../styles/PodcastList/PodcastList.css";
 import { type Podcast } from "../../domain";
-import { useStorage } from "../..";
 import usePodcastsList from "../hooks/usePodcastsList";
+import { useAppStore } from "../../application/stores/useAppStore";
 
 function PostcastList() {
   const { podcasts, error, isLoading } = usePodcastsList();
+  const { updateLoading } = useAppStore();
   const [searchTerm, setSearchTerm] = useState<string>("");
-  const { updateLoading } = useStorage();
 
-  // Global Loading
   useEffect(() => {
     updateLoading(isLoading);
   }, [isLoading]);

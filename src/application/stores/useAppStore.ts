@@ -1,15 +1,18 @@
 import { create } from "zustand";
+import { IPodcastRepository } from "../../domain/interfaces/IPodcastRepository";
 import { PodcastService } from "../services/PodcastService";
 import { PodcastRepository } from "../../infraestructure/repositories/PodcastRepository";
 
-interface AppStorage {
-  podcastService: PodcastService;
+interface AppStore {
   isLoading: boolean;
+  podcastService: IPodcastRepository;
   updateLoading: (newLoading: boolean) => void;
 }
-
-export const useAppStore = create<AppStorage>((set) => ({
-  podcastService: new PodcastService(new PodcastRepository()),
+export const useAppStore = create<AppStore>((set) => ({
   isLoading: false,
-  updateLoading: (newLoading: boolean) => set({ isLoading: newLoading }),
+  podcastService: new PodcastService(new PodcastRepository()),
+  updateLoading: (newLoading: boolean) =>
+    set(() => ({
+      isLoading: newLoading,
+    })),
 }));

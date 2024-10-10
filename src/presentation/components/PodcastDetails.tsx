@@ -6,7 +6,7 @@ import {
 } from "../common/utils/FormattingHelpers";
 import "../styles/PodcastDetails/PodcastDetails.css";
 import usePodcastDetails from "../hooks/usePodcastDetails";
-import { useStorage } from "../..";
+import { useAppStore } from "../../application/stores/useAppStore";
 
 function PodcastDetails() {
   const { podcastId } = useParams<{ podcastId: string }>();
@@ -16,9 +16,8 @@ function PodcastDetails() {
     isLoading: isLoadingDetails,
   } = usePodcastDetails(podcastId);
 
-  const { updateLoading } = useStorage();
+  const { updateLoading } = useAppStore();
 
-  // Global Loading: is special because we prefecth 2 values before the fetch complete with at least 3 values
   useEffect(() => {
     updateLoading(isLoadingDetails || (episodes && episodes.length <= 2));
   }, [isLoadingDetails]);

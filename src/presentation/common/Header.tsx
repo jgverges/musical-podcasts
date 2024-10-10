@@ -1,13 +1,12 @@
 import React from "react";
-// import { useLoading } from "./LoadingContext.OLD";
 import { Link } from "react-router-dom";
 import LoadingIndicator from "./LoadingIndicator";
 import "../styles/Header.css";
-import { useStorage } from "../..";
+import { useAppStore } from "../../application/stores/useAppStore";
 
 function Header() {
-  const isLoading = useStorage((state) => state.isLoading);
-  // const { loading: initialLoading } = useLoading(); // TODO remove
+  const isLoading = useAppStore((state) => state.isLoading);
+
   return (
     <header className="header-container">
       <h1 className="header-title">

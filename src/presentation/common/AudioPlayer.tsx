@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
-import { useStorage } from "../..";
+// import { useStorage } from "../..";
+import { useAppStore } from "../../application/stores/useAppStore";
 
 interface AudioPlayerProps {
   src: string;
 }
 
 function AudioPlayer({ src }: AudioPlayerProps) {
-  const { updateLoading } = useStorage();
+  const { updateLoading } = useAppStore();
 
   useEffect(() => {
     updateLoading(true);

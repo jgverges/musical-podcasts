@@ -6,7 +6,6 @@ import { PersistQueryClientProvider } from "@tanstack/react-query-persist-client
 import { QueryClient } from "@tanstack/react-query";
 import { createSyncStoragePersister } from "@tanstack/query-sync-storage-persister";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
-import { create } from "zustand";
 
 const root = createRoot(document.getElementById("root")!);
 
@@ -24,16 +23,6 @@ export const queryClient = new QueryClient({
     },
   },
 });
-
-// Zustand
-interface Storage {
-  isLoading: boolean;
-  updateLoading: (newLoading: boolean) => void;
-}
-export const useStorage = create<Storage>((set) => ({
-  isLoading: false,
-  updateLoading: (newLoading: boolean) => set({ isLoading: newLoading }),
-}));
 
 if (root !== null) {
   root.render(
