@@ -1,37 +1,16 @@
-import React, { useEffect } from "react";
-import { Link, useParams } from "react-router-dom";
+import React from "react";
+import { Link } from "react-router-dom";
 import {
   isoDateToDayMonthYear,
   millisecondsToHoursMinutes,
-} from "../common/utils/FormattingHelpers";
-import "../styles/PodcastDetails/PodcastDetails.css";
-import usePodcastDetails from "../hooks/usePodcastDetails";
-import { useAppStore } from "../../application/stores/useAppStore";
+} from "../../common/utils/FormattingHelpers";
+import { Episode } from "../../../domain";
 
-function PodcastDetails() {
-  const { podcastId } = useParams<{ podcastId: string }>();
-  const {
-    data: episodes,
-    error,
-    isLoading: isLoadingDetails,
-  } = usePodcastDetails(podcastId);
-
-  const { updateLoading } = useAppStore();
-
-  useEffect(() => {
-    updateLoading(isLoadingDetails || (episodes && episodes.length <= 2));
-  }, [isLoadingDetails]);
-
-  if (error) {
-    console.log(error);
-    return;
-  }
-
-  episodes.forEach((detail) => {
-    if (!detail.title || !detail.duration || !detail.releaseDate)
-      console.log(`Missing information  in episode`);
-  });
-
+interface Props {
+  episodes: Episode[];
+  podcastId: string | undefined;
+}
+export default function EpisodeList({ episodes, podcastId }: Props) {
   const resultsLength = episodes.length;
 
   return (
@@ -90,5 +69,3 @@ function PodcastDetails() {
     </section>
   );
 }
-
-export default PodcastDetails;

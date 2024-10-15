@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-// import { useStorage } from "../..";
 import { useAppStore } from "../../application/stores/useAppStore";
 
 interface AudioPlayerProps {
@@ -19,6 +18,7 @@ function AudioPlayer({ src }: AudioPlayerProps) {
   const handleError = (e: React.SyntheticEvent<HTMLAudioElement, Event>) => {
     console.log(e.currentTarget.error?.code);
   };
+
   return (
     <figure>
       <audio

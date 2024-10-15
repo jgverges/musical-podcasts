@@ -1,18 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { Link, Outlet, useParams, useLocation } from "react-router-dom";
-import "../styles/PodcastDetails/PodcastLayout.css";
-import { Podcast } from "../../domain";
+import React from "react";
+import { Link, Outlet } from "react-router-dom";
+import "../../styles/PodcastDetails/PodcastLayout.css";
+import { Podcast } from "../../../domain";
 
-export default function PodcastLayout() {
-  const { podcastId } = useParams();
-  const location = useLocation();
-  const [podcast, setPodcast] = useState<Podcast>();
-
-  useEffect(() => {
-    const data = location.state?.data;
-    if (data) setPodcast(data);
-    if (!data) console.log("Does not find data in location");
-  }, []);
+interface Props {
+  podcastId: string | undefined;
+  podcast: Podcast | undefined;
+}
+export default function DetailCard({ podcastId, podcast }: Props) {
   const image170Height = podcast?.imageList.find(
     (image) => image.attributes.height === "170"
   );

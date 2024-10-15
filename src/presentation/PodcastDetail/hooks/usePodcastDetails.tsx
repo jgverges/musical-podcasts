@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { useQueries } from "@tanstack/react-query";
-import { Episode } from "../../domain";
-import { useAppStore } from "../../application/stores/useAppStore";
+import { useAppStore } from "../../../application/stores/useAppStore";
+import { Episode } from "../../../domain";
 
 export function usePodcastDetails(podcastId: string | undefined) {
   const podcastService = useAppStore((state) => state.podcastService);

@@ -1,10 +1,10 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import PodcastDetails from "../../src/presentation/components/PodcastDetails";
-import usePodcastDetails from "../../src/presentation/hooks/usePodcastDetails";
+import PodcastDetails from "../../src/presentation/PodcastDetail/PodcastDetails";
 import { BrowserRouter } from "react-router-dom";
 import mock from "../__mocks__/Podcast-detail-sm.mock.json";
 import { millisecondsToHoursMinutes } from "../../src/presentation/common/utils/FormattingHelpers";
+import usePodcastDetails from "../../src/presentation/PodcastDetail/hooks/usePodcastDetails";
 
 const mockEpisodes = mock.results.filter((detail) => "episodeUrl" in detail);
 

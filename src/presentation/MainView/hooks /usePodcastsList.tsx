@@ -1,6 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
-import { useAppStore } from "../../application/stores/useAppStore";
-import { Podcast } from "../../domain";
+import { Podcast } from "../../../domain";
+import { useAppStore } from "../../../application/stores/useAppStore";
 
 function usePodcastList() {
   const podcastService = useAppStore((state) => state.podcastService);

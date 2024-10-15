@@ -5,14 +5,24 @@ import { PodcastRepository } from "../../infraestructure/repositories/PodcastRep
 
 interface AppStore {
   isLoading: boolean;
+  searchTerm: string;
   podcastService: IPodcastRepository;
+
+  setSearchTerm: (newSearchTerm: string) => void;
   updateLoading: (newLoading: boolean) => void;
 }
+
 export const useAppStore = create<AppStore>((set) => ({
   isLoading: false,
+  searchTerm: "",
   podcastService: new PodcastService(new PodcastRepository()),
+
   updateLoading: (newLoading: boolean) =>
     set(() => ({
       isLoading: newLoading,
+    })),
+  setSearchTerm: (newSearchTerm: string) =>
+    set(() => ({
+      searchTerm: newSearchTerm,
     })),
 }));
