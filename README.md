@@ -9,10 +9,37 @@ This project is a mini-application for listening to musical podcasts. It is buil
 
 The project `musical-podcasts` hass three main views:
 
-- **PodcastList**: Main view who displays the list of the top 100 most popular podcasts.
+- **MainView**: Main view who displays the list of the top 100 most popular podcasts.
 - **Podcast Details**: Shows detailed information about a podcast and its episodes.
 - **Episode Details**: Displays detailed information about an episode, including a basic audio player.
 
+### Structure
+
+The project is structured into separate layers for domain, services, infrastructure, and presentation
+
+````
+src
+.
+├── App.tsx
+├── application
+│   ├── services
+│   └── stores
+├── domain
+│   ├── entities
+│   ├── index.ts
+│   └── interfaces
+├── index.tsx
+├── infraestructure
+│   ├── api
+│   ├── mappers
+│   └── repositories
+├── presentation
+│   ├── EpisodeDetails
+│   ├── MainView
+│   ├── PodcastDetail
+│   └── common
+└── styles
+```
 ## Running the Application
 
 ### Requirements
@@ -71,26 +98,5 @@ npm run build
 - [Top 100 Podcasts](https://itunes.apple.com/us/rss/toppodcasts/limit=100/genre=1310/json)
 - [Podcast Details](https://itunes.apple.com/lookup?id=934552872&media=podcast&entity=podcastEpisode&limit=20)
 
-## Information Processing, Filtering, and Conversions
 
-### Interpreted HTML Rendering
-
-The description of the episodes sometimes contains HTML and should be displayed interpreted (not escaped). This is the default behavior of React when rendering, although treatment has been added to allow line breaks.
-
-### JSON List Filtering
-
-The podcast list API call returns a JSON with thousands of lines corresponding to the `PodcastListResponse` interface. This JSON is filtered to use only the minimum necessary information, using the `PodcastFiltered` interface instead of `PodcastI`.
-
-### Render Treatments
-
-- **Dates**: Rendered in a more readable format.
-
-- **Milliseconds**: Converted to hours:minutes format.
-
-- **Track Titles**: information has been filtered, removing the episode number.
-
-- **Podcast Card Title** : Length Limitation to prevent overflow .
-
-## Version Control
-
-The project uses `git` and `GitHub` under the `conventional commit` protocol. It also includes explanatory `tags`.
+````
