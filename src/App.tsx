@@ -1,7 +1,7 @@
 import React, { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import NotFoundPage from "./presentation/common/NotFoundPage";
-import "./presentation/styles/main.css";
+import "./styles/main.css";
 import Header from "./presentation/common/Header";
 
 const MainView = lazy(() => import("./presentation/MainView/MainView"));

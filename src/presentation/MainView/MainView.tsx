@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../styles/MainView/PodcastList.css";
+import "../../styles/MainView/PodcastList.css";
 import { useAppStore } from "../../application/stores/useAppStore";
 import PodcastList from "./components/PodcastList";
 import SearchPodcasts from "./components/SearchPodcasts";

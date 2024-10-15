@@ -1,6 +1,6 @@
 import React from "react";
 import { Link, Outlet } from "react-router-dom";
-import "../../styles/PodcastDetails/PodcastLayout.css";
+import "../../../styles/PodcastDetails/PodcastLayout.css";
 import { Podcast } from "../../../domain";
 
 interface Props {

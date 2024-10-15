@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import LoadingIndicator from "./LoadingIndicator";
-import "../styles/Header.css";
+import "../../styles/Header.css";
 import { useAppStore } from "../../application/stores/useAppStore";
 
 function Header() {

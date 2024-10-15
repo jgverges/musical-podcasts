@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "../../styles/MainView/PodcastListItem.css";
+import "../../../styles/MainView/PodcastListItem.css";
 import { Podcast } from "../../../domain";
 
 interface PodcastListItemProps {

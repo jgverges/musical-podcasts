@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useLocation } from "react-router-dom";
-import "../styles/PodcastDetails/PodcastDetails.css";
+import "../../styles/PodcastDetails/PodcastDetails.css";
 import { useAppStore } from "../../application/stores/useAppStore";
 import EpisodeList from "./components/EpisodeList";
 import { Podcast } from "../../domain";

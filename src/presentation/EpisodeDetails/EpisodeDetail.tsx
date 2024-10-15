@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
-import "../styles/EpisodeDetails/EpisodeDetail.css";
+import "../../styles/EpisodeDetails/EpisodeDetail.css";
 import AudioPlayer from "../common/AudioPlayer";
 import { Episode } from "../../domain";
 
